@@ -4,7 +4,7 @@
 
 [Codelf](https://github.com/unbug/codelf)
 
-Xcode Extension For Codelf
+Simple Xcode Extension
 
 ## install
 
