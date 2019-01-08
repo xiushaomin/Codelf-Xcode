@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		751804A821E49FA9007D007C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751804A721E49FA9007D007C /* AppDelegate.swift */; };
+		751804AA21E49FAA007D007C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751804A921E49FAA007D007C /* Assets.xcassets */; };
+		751804AD21E49FAA007D007C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751804AB21E49FAA007D007C /* MainMenu.xib */; };
+		751804BC21E4A00E007D007C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751804BB21E4A00E007D007C /* Cocoa.framework */; };
+		751804BF21E4A00E007D007C /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751804BE21E4A00E007D007C /* SourceEditorExtension.swift */; };
+		751804C121E4A00E007D007C /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751804C021E4A00E007D007C /* SourceEditorCommand.swift */; };
+		751804C621E4A00F007D007C /* CodelfExtensions.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 751804B921E4A00E007D007C /* CodelfExtensions.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7599632321E4CCA600EA2105 /* Script in Resources */ = {isa = PBXBuildFile; fileRef = 7599632221E4CCA600EA2105 /* Script */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		751804C421E4A00F007D007C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7518049C21E49FA9007D007C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 751804B821E4A00E007D007C;
+			remoteInfo = CodelfExtensions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		751804CA21E4A00F007D007C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				751804C621E4A00F007D007C /* CodelfExtensions.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		751804A421E49FA9007D007C /* CodelfApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodelfApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		751804A721E49FA9007D007C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		751804A921E49FAA007D007C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		751804AC21E49FAA007D007C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		751804AE21E49FAA007D007C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		751804AF21E49FAA007D007C /* CodelfApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodelfApp.entitlements; sourceTree = "<group>"; };
+		751804B921E4A00E007D007C /* CodelfExtensions.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CodelfExtensions.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		751804BB21E4A00E007D007C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		751804BE21E4A00E007D007C /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		751804C021E4A00E007D007C /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		751804C221E4A00F007D007C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		751804C321E4A00F007D007C /* CodelfExtensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodelfExtensions.entitlements; sourceTree = "<group>"; };
+		7599632221E4CCA600EA2105 /* Script */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Script; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		751804A121E49FA9007D007C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		751804B621E4A00E007D007C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751804BC21E4A00E007D007C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7518049B21E49FA9007D007C = {
+			isa = PBXGroup;
+			children = (
+				751804A621E49FA9007D007C /* CodelfApp */,
+				751804BD21E4A00E007D007C /* CodelfExtensions */,
+				751804BA21E4A00E007D007C /* Frameworks */,
+				751804A521E49FA9007D007C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		751804A521E49FA9007D007C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				751804A421E49FA9007D007C /* CodelfApp.app */,
+				751804B921E4A00E007D007C /* CodelfExtensions.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		751804A621E49FA9007D007C /* CodelfApp */ = {
+			isa = PBXGroup;
+			children = (
+				751804A721E49FA9007D007C /* AppDelegate.swift */,
+				751804A921E49FAA007D007C /* Assets.xcassets */,
+				751804AB21E49FAA007D007C /* MainMenu.xib */,
+				751804AE21E49FAA007D007C /* Info.plist */,
+				751804AF21E49FAA007D007C /* CodelfApp.entitlements */,
+			);
+			path = CodelfApp;
+			sourceTree = "<group>";
+		};
+		751804BA21E4A00E007D007C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				751804BB21E4A00E007D007C /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		751804BD21E4A00E007D007C /* CodelfExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				7599632221E4CCA600EA2105 /* Script */,
+				751804BE21E4A00E007D007C /* SourceEditorExtension.swift */,
+				751804C021E4A00E007D007C /* SourceEditorCommand.swift */,
+				751804C221E4A00F007D007C /* Info.plist */,
+				751804C321E4A00F007D007C /* CodelfExtensions.entitlements */,
+			);
+			path = CodelfExtensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		751804A321E49FA9007D007C /* CodelfApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 751804B221E49FAA007D007C /* Build configuration list for PBXNativeTarget "CodelfApp" */;
+			buildPhases = (
+				751804A021E49FA9007D007C /* Sources */,
+				751804A121E49FA9007D007C /* Frameworks */,
+				751804A221E49FA9007D007C /* Resources */,
+				751804CA21E4A00F007D007C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				751804C521E4A00F007D007C /* PBXTargetDependency */,
+			);
+			name = CodelfApp;
+			productName = CodelfApp;
+			productReference = 751804A421E49FA9007D007C /* CodelfApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		751804B821E4A00E007D007C /* CodelfExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 751804C721E4A00F007D007C /* Build configuration list for PBXNativeTarget "CodelfExtensions" */;
+			buildPhases = (
+				751804B521E4A00E007D007C /* Sources */,
+				751804B621E4A00E007D007C /* Frameworks */,
+				751804B721E4A00E007D007C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodelfExtensions;
+			productName = CodelfExtensions;
+			productReference = 751804B921E4A00E007D007C /* CodelfExtensions.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7518049C21E49FA9007D007C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = xiushaomin;
+				TargetAttributes = {
+					751804A321E49FA9007D007C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					751804B821E4A00E007D007C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 7518049F21E49FA9007D007C /* Build configuration list for PBXProject "CodelfApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7518049B21E49FA9007D007C;
+			productRefGroup = 751804A521E49FA9007D007C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				751804A321E49FA9007D007C /* CodelfApp */,
+				751804B821E4A00E007D007C /* CodelfExtensions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		751804A221E49FA9007D007C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751804AA21E49FAA007D007C /* Assets.xcassets in Resources */,
+				751804AD21E49FAA007D007C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		751804B721E4A00E007D007C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7599632321E4CCA600EA2105 /* Script in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		751804A021E49FA9007D007C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751804A821E49FA9007D007C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		751804B521E4A00E007D007C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751804BF21E4A00E007D007C /* SourceEditorExtension.swift in Sources */,
+				751804C121E4A00E007D007C /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		751804C521E4A00F007D007C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 751804B821E4A00E007D007C /* CodelfExtensions */;
+			targetProxy = 751804C421E4A00F007D007C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		751804AB21E49FAA007D007C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				751804AC21E49FAA007D007C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		751804B021E49FAA007D007C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		751804B121E49FAA007D007C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		751804B321E49FAA007D007C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CodelfApp/CodelfApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 22U2J4BKC6;
+				INFOPLIST_FILE = CodelfApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiushaomin.ios.CodelfApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		751804B421E49FAA007D007C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CodelfApp/CodelfApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 22U2J4BKC6;
+				INFOPLIST_FILE = CodelfApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiushaomin.ios.CodelfApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		751804C821E4A00F007D007C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CodelfExtensions/CodelfExtensions.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 22U2J4BKC6;
+				INFOPLIST_FILE = CodelfExtensions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiushaomin.ios.CodelfApp.CodelfExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		751804C921E4A00F007D007C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CodelfExtensions/CodelfExtensions.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 22U2J4BKC6;
+				INFOPLIST_FILE = CodelfExtensions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiushaomin.ios.CodelfApp.CodelfExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7518049F21E49FA9007D007C /* Build configuration list for PBXProject "CodelfApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751804B021E49FAA007D007C /* Debug */,
+				751804B121E49FAA007D007C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		751804B221E49FAA007D007C /* Build configuration list for PBXNativeTarget "CodelfApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751804B321E49FAA007D007C /* Debug */,
+				751804B421E49FAA007D007C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		751804C721E4A00F007D007C /* Build configuration list for PBXNativeTarget "CodelfExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751804C821E4A00F007D007C /* Debug */,
+				751804C921E4A00F007D007C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7518049C21E49FA9007D007C /* Project object */;
+}
